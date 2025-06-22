@@ -23,6 +23,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-interlude",
+          title: "interlude",
+          description: "Proof I&#39;ve left the house",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/interlude/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Website development in progress — more updates coming soon.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
         },{id: "post-why-physics",
         
           title: "Why Physics?",
