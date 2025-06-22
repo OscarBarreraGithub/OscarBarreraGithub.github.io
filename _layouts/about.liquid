@@ -13,19 +13,99 @@ layout: default
     text-align: center;
     margin-top: -50vh;
   }
+  /* make the “Harvard University” line bigger */
+  header.post-header .desc {
+    font-size: 1.25rem; /* bump this up or down to taste */
+    line-height: 1.3; /* optional: improve legibility */
+  }
+  /* flex‐split the header into left/right */
+  header.post-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  /* left block (name + Harvard) stays flush left */
+  header.post-header .header-left {
+    flex: 1;
+    text-align: left;
+  }
+
+  /* right block (H2 + H3) stays flush right */
+  header.post-header .header-right {
+    flex: 0 0 auto;
+    text-align: right;
+    max-width: 300px; /* optional cap so it doesn’t balloon */
+  }
+
+  /* tighten the gap between your H2 and H3 */
+  header.post-header .post-type {
+    margin-bottom: 0.2rem;
+  }
+  header.post-header .post-subtitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  /* reset any inherited centering on the right block */
+  header.post-header .header-right .post-type,
+  header.post-header .header-right .post-subtitle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* use this to bump up general paragraph/text size */
+  .big-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .scroll-arrow {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem auto 0;
+    opacity: 0.6;
+    animation: bounce 3s ease-in-out infinite;
+    font-family: monospace;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    30%,
+    70% {
+      transform: translateY(-10px);
+    }
+  }
 </style>
 
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+    <div class="header-left">
+      <h1 class="post-title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span>
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </div>
+
+    <div class="header-right">
+      {% if page.post_type %}
+        <h2 class="post-type">{{ page.post_type }}</h2>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+      {% if page.post_subtitle %}
+        <h3 class="post-subtitle">{{ page.post_subtitle }}</h3>
+      {% endif %}
+    </div>
   </header>
 
   <article>

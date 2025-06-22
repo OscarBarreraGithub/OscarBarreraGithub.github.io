@@ -2,11 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Harvard University
+subtitle: Harvard University
+post_type: "High Energy Theory"
+post_subtitle: "(with a Side of ML)"
 
 profile:
   align: right
-  image: prof_pic.png
+  image: profilePic.png
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>oscarbarrera@g.harvard.edu</p>
@@ -43,30 +45,23 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 ---
 
-# High-Energy Theory
+### Welcome
 
-## (with a Side of Machine Learning)
+<p class="big-text">I'm Oscar Barrera, a PhD student in high-energy theory at Harvard. My research sits at the intersection of physics and machine learning — combining theoretical insight with computational tools to explore how the universe works.</p>
+
+<div class="spacer"></div>
+
+<p class="big-text">Outside of research, I play guitar and, until recently, rode a motorcycle through Florida’s much-missed sunshine.</p>
+
+<div class="scroll-arrow">↓</div>
 
 <div class="spacer"></div>
 
 ---
 
-### Who am I?
+### About This Site
 
-I’m Oscar Barrera, a PhD student in high-energy theory at Harvard University.  
-I’ve worked on projects with Lisa Randall and Matt Schwartz, and I’m deeply interested in machine learning & computational physics.
-
-<div class="spacer"></div>
-
----
-
-### Explore More
-
-- [Publications](/publications)
-- [Coding Projects](/coding)
-- [Curriculum Vitae](/cv)
-- [GitHub Repos](/github)
-- [Teaching](/teaching)
-- [Blog](/blog)
+<p class="big-text">This site is part portfolio, part sandbox.
+You’ll find research highlights, side projects, and the occasional physics tangent — the kind of thing that wouldn’t make it into a paper, but still feels worth sharing.</p>
 
 <script src="{{ '/assets/js/bh-scrub.js' | relative_url }}" defer></script>

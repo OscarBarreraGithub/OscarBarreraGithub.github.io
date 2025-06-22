@@ -16,6 +16,21 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
+<style>
+.header-bar h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.header-bar h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #777;
+  margin-top: 0;
+}
+</style>
+
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}
@@ -29,7 +44,7 @@ pagination:
   </div>
   {% endif %}
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+<!-- {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
@@ -54,9 +69,9 @@ pagination:
       {% endfor %}
     </ul>
   </div>
-  {% endif %}
+  {% endif %} -->
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
+<!-- {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
 <br>
 
@@ -99,7 +114,7 @@ pagination:
     </div>
     <hr>
 
-{% endif %}
+{% endif %} -->
 
   <ul class="post-list">
 
