@@ -45,17 +45,17 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 ---
 
-### Welcome
+### Hi, I’m Oscar,
 
-<p class="big-text">I'm Oscar Barrera, a PhD student in high-energy theory at Harvard. My research sits at the intersection of physics and machine learning — combining theoretical insight with computational tools to explore how the universe works.</p>
+<p class="big-text"> a PhD student in theoretical physics at Harvard University. My work lives at the intersection of high-energy theory and machine learning, where I blend analytical insight with numerical tools to explore some of the most fundamental questions about the universe.</p>
 
 <div class="spacer"></div>
 
-<p class="big-text">Outside of research, I play guitar and, until recently, rode a motorcycle through Florida’s much-missed sunshine.</p>
+<p class="big-text">I’m currently working with Lisa Randall to numerically constrain flavor-violating processes in five-dimensional Randall–Sundrum models, and with Matt Schwartz to develop efficient algorithms for evaluating Feynman diagrams. In the past, I’ve worked on gravitational wave astrophysics, machine learning for superconductor discovery, and synthetic data generation for financial applications.</p>
 
 <div class="scroll-arrow">↓</div>
 
-<div class="spacer"></div>
+<p class="big-text">Outside the lab, I play guitar and grew up on a mix of ’70s rock, ’90s grunge, and 2000s alt. The Interlude tab has the full list of shows I’ve seen.</p>
 
 ---
 
