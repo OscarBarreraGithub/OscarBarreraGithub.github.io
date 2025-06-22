@@ -31,7 +31,7 @@ latest_posts:
 
 <img 
 id="bh-scrub-img" 
-src="/assets/img/blackhole-frames/frame_0000.png" 
+src="/assets/img/blackhole-frames/FRAME_0000.png" 
 alt="Black holes merging" 
 style="position:fixed; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
 
