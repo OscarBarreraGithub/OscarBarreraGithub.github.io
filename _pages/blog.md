@@ -18,7 +18,7 @@ pagination:
 
 <style>
 .header-bar h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
