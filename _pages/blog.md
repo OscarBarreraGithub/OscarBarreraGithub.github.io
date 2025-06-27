@@ -18,7 +18,7 @@ pagination:
 
 <style>
 .header-bar h1 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -29,6 +29,18 @@ pagination:
   color: #777;
   margin-top: 0;
 }
+
+.blog-intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #777;
+  padding-top: 1.5rem;
+}
+  .spacer {
+    height: 5vh;
+    pointer-events: none;
+  }
+
 </style>
 
 <div class="post">
@@ -43,6 +55,20 @@ pagination:
     <h2>{{ site.blog_description }}</h2>
   </div>
   {% endif %}
+
+<!-- Custom section after blog title -->
+<div class="blog-intro">
+
+<h2>Why Physics?</h2>
+
+<div class="spacer"></div>
+
+  <p class="big-text">If a stranger were to ask, “Why physics?” you might say: “Well, even if it doesn’t always have direct applications, it builds the tools that let us invent the things we once couldn’t even imagine — like GPS, which relies on general relativity.” </p>
+
+  <p class="big-text">But the deeper value of physics isn’t always easy to put into words. It reveals itself in moments of quiet wonder — like staring at the ceiling at 3 a.m., haunted by the question of why anything exists at all. For those who’ve felt that weight, the urge to probe the laws of nature isn’t just curiosity — it’s a need to make sense of existence itself.</p>
+
+  <p class="big-text">If unraveling the fabric of spacetime, probing the roots of consciousness, or tracing the hidden symmetries of reality doesn’t stir something in you - spiritually or intellectually - then maybe the question isn’t what the universe hides, but what within us has gone silent enough to no longer ask.</p>
+</div>
 
 <!-- {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 

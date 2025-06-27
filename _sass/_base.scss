@@ -504,6 +504,13 @@ footer.sticky-bottom {
   }
 }
 
+.footer-logo {
+  /* minimum 40px, ideally 5vw, but never more than 120px */
+  max-height: clamp(60px, 5vw, 100px);
+  width: auto;
+  height: auto;
+}
+
 // CV
 
 .cv {
