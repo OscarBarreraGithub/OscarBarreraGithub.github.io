@@ -48,7 +48,7 @@ footer_fixed: false
 search_enabled: false
 socials_in_search: true
 posts_in_search: true
-bib_search: true
+bib_search: false
 
 # Dimensions
 max_width: 930px
@@ -298,6 +298,7 @@ filtered_bibtex_keywords:
     abbr,
     abstract,
     additional_info,
+    area,
     altmetric,
     annotation,
     arxiv,
@@ -314,6 +315,7 @@ filtered_bibtex_keywords:
     preview,
     selected,
     slides,
+    summary,
     supp,
     video,
     website,

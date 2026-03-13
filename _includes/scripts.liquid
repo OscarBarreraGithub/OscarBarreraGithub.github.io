@@ -11,7 +11,7 @@
   {% assign enable_progressbar = page.enable_progressbar %}
 {% endif %}
 {% assign enable_publication_badges = false %}
-{% if page.layout == 'publications' or page.selected_papers or page.enable_publication_badges %}
+{% if page.selected_papers or page.enable_publication_badges %}
   {% assign enable_publication_badges = true %}
 {% endif %}
 

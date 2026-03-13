@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: Harvard University
 post_type: "High Energy Theory"
-post_subtitle: "(with a Side of ML)"
+post_subtitle: "(and AI)"
 
 profile:
   align: right
@@ -50,9 +50,12 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 <p class="big-text">Outside the lab, I play guitar and grew up on a mix of ’70s rock, ’90s grunge, and 2000s alt. The Interlude tab has a select list of bands I’ve seen live.</p>
 
+<div class="spacer"></div>
+
 ---
 
-### About This Site
+<p class="big-text">If a stranger were to ask, “Why physics?” you might say something like: “Well, even if it doesn’t always have direct applications, it builds the tools that let us invent the things we once couldn’t even imagine, like GPS, which relies on general relativity.”</p>
 
-<p class="big-text">This site is part portfolio, part sandbox.
-You’ll find research highlights, side projects, and the occasional physics tangent — the kind of thing that wouldn’t make it into a paper, but still feels worth sharing.</p>
+<p class="big-text">But the deeper value of physics is hard to put into words. It shows up in quiet moments, like staring at the ceiling at 3 am, wondering why anything exists at all. For those who’ve felt that weight, the urge to probe the laws of nature becomes less a curiosity and more a need to make sense of existence itself.</p>
+
+<p class="big-text">If questions about spacetime, consciousness, or the symmetries underlying reality don't move you - spiritually or intellectually - then maybe the question isn’t what the universe hides, but what within us has gone silent enough to no longer ask.</p>
