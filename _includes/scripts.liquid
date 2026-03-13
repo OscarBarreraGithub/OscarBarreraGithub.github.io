@@ -1,3 +1,20 @@
+{% assign enable_medium_zoom = site.enable_medium_zoom %}
+{% if page.enable_medium_zoom == true or page.enable_medium_zoom == false %}
+  {% assign enable_medium_zoom = page.enable_medium_zoom %}
+{% endif %}
+{% assign enable_math = site.enable_math %}
+{% if page.enable_math == true or page.enable_math == false %}
+  {% assign enable_math = page.enable_math %}
+{% endif %}
+{% assign enable_progressbar = site.enable_progressbar %}
+{% if page.enable_progressbar == true or page.enable_progressbar == false %}
+  {% assign enable_progressbar = page.enable_progressbar %}
+{% endif %}
+{% assign enable_publication_badges = false %}
+{% if page.layout == 'publications' or page.selected_papers or page.enable_publication_badges %}
+  {% assign enable_publication_badges = true %}
+{% endif %}
+
 <!-- jQuery -->
 <script
   src="{{ site.third_party_libraries.jquery.url.js }}"
@@ -152,7 +169,7 @@
   <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.enable_medium_zoom %}
+{% if enable_medium_zoom %}
   <!-- Medium Zoom JS -->
   <script
     defer
@@ -188,14 +205,14 @@
 <script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
 
 <!-- Badges -->
-{% if site.enable_publication_badges.altmetric %}
+{% if enable_publication_badges and site.enable_publication_badges.altmetric %}
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 {% endif %}
-{% if site.enable_publication_badges.dimensions %}
+{% if enable_publication_badges and site.enable_publication_badges.dimensions %}
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 {% endif %}
 
-{% if site.enable_math %}
+{% if enable_math %}
   <!-- MathJax -->
   <script
     defer
@@ -257,7 +274,7 @@
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
 
-{% if site.enable_progressbar %}
+{% if enable_progressbar %}
   <!-- Scrolling Progress Bar -->
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 {% endif %}

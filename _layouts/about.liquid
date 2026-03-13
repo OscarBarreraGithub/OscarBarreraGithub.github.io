@@ -111,6 +111,19 @@ layout: default
   </header>
 
   <article>
+    {% if page.background_scrub %}
+      <img
+        id="bh-scrub-img"
+        src="{{ '/assets/img/blackhole-frames/FRAME_0000.webp' | relative_url }}"
+        data-fallback-src="{{ '/assets/img/blackhole-frames/FRAME_0000.png' | relative_url }}"
+        alt=""
+        aria-hidden="true"
+        decoding="async"
+        onerror="if (this.dataset.fallbackApplied !== 'true') { this.dataset.fallbackApplied = 'true'; this.src = this.dataset.fallbackSrc; }"
+        style="position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;"
+      >
+    {% endif %}
+
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
@@ -171,6 +184,10 @@ layout: default
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
+    {% endif %}
+
+    {% if page.background_scrub %}
+      <script defer src="{{ '/assets/js/bh-scrub.js' | relative_url }}"></script>
     {% endif %}
   </article>
 </div>

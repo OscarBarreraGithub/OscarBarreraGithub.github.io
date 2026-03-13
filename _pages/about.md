@@ -25,17 +25,10 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+background_scrub: true
+enable_math: false
+enable_medium_zoom: false
 ---
-
-<!-- SCRUB BACKGROUND -->
-
-<img 
-id="bh-scrub-img" 
-src="/assets/img/blackhole-frames/FRAME_0000.png" 
-alt="Black holes merging" 
-style="position:fixed; inset:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
-
-<!-- END SCRUB BACKGROUND -->
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). Or any other link. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
@@ -63,5 +56,3 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 <p class="big-text">This site is part portfolio, part sandbox.
 You’ll find research highlights, side projects, and the occasional physics tangent — the kind of thing that wouldn’t make it into a paper, but still feels worth sharing.</p>
-
-<script src="{{ '/assets/js/bh-scrub.js' | relative_url }}" defer></script>

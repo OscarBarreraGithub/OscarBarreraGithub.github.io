@@ -15,6 +15,10 @@
 {% endif %}
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% assign scholar_userid = site.scholar_userid | default: site.data.socials.scholar_userid %}
+{% assign github_username = site.github_username | default: site.data.socials.github_username %}
+{% assign linkedin_username = site.linkedin_username | default: site.data.socials.linkedin_username %}
+{% assign x_username = site.x_username | default: site.data.socials.x_username %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
@@ -70,9 +74,9 @@
   {% if page.og_image or site.og_image %}
     <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
   {% endif %}
-  {% if site.x_username %}
-    <meta name="twitter:site" content="@{{ site.x_username }}">
-    <meta name="twitter:creator" content="@{{ site.x_username }}">
+  {% if x_username %}
+    <meta name="twitter:site" content="@{{ x_username }}">
+    <meta name="twitter:creator" content="@{{ x_username }}">
   {% endif %}
 {% endif %}
 
@@ -84,8 +88,8 @@
     {% capture link %}https://orcid.org/{{ site.orcid_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.scholar_userid %}
-    {% capture link %}https://scholar.google.com/citations?user={{ site.scholar_userid }}{% endcapture %}
+  {% if scholar_userid %}
+    {% capture link %}https://scholar.google.com/citations?user={{ scholar_userid }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.semanticscholar_id %}
@@ -112,20 +116,20 @@
     {% capture link %}https://www.scopus.com/authid/detail.uri?authorId={{ site.scopus_id }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.github_username %}
-    {% capture link %}https://github.com/{{ site.github_username }}{% endcapture %}
+  {% if github_username %}
+    {% capture link %}https://github.com/{{ github_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.telegram_username %}
     {% capture link %}https://telegram.me/{{ site.telegram_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.linkedin_username %}
-    {% capture link %}https://www.linkedin.com/in/{{ site.linkedin_username }}{% endcapture %}
+  {% if linkedin_username %}
+    {% capture link %}https://www.linkedin.com/in/{{ linkedin_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
-  {% if site.x_username %}
-    {% capture link %}https://twitter.com/{{ site.x_username }}{% endcapture %}
+  {% if x_username %}
+    {% capture link %}https://twitter.com/{{ x_username }}{% endcapture %}
     {% assign sameaslinks = sameaslinks | push: link %}
   {% endif %}
   {% if site.mastodon_username %}
