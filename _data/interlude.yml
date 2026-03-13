@@ -1,0 +1,38 @@
+years:
+  - year: 2024
+    months:
+      - name: October
+        shows:
+          - Korn
+      - name: September
+        shows:
+          - Pearl Jam
+      - name: August
+        shows:
+          - Green Day
+      - name: May
+        shows:
+          - Foo Fighters
+          - Limp Bizkit
+          - Stone Temple Pilots
+          - The Offspring
+          - Slipknot
+          - Motley Crue
+          - Evanescence
+          - Sum 41
+          - Disturbed
+          - Breaking Benjamin
+          - Queens of the Stone Age
+          - Primus
+          - Cypress Hill
+          - Falling in Reverse
+  - year: 2020
+    months:
+      - name: January
+        shows:
+          - Guns N' Roses
+  - year: 2019
+    months:
+      - name: September
+        shows:
+          - The Who

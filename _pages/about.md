@@ -48,7 +48,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 <div class="scroll-arrow">↓</div>
 
-<p class="big-text">Outside the lab, I play guitar and grew up on a mix of ’70s rock, ’90s grunge, and 2000s alt. The Interlude tab has the full list of shows I’ve seen.</p>
+<p class="big-text">Outside the lab, I play guitar and grew up on a mix of ’70s rock, ’90s grunge, and 2000s alt. The Interlude tab has a select list of bands I’ve seen live.</p>
 
 ---
 
