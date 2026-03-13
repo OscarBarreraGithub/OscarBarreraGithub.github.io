@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://OscarBarreraGithub.github.io/sitemap.xml
+Sitemap: https://oscarphysics.com/sitemap.xml
