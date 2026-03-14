@@ -160,5 +160,7 @@ nav_order: 3
         {% endfor %}
       </div>
     </section>
-  {% endfor %}
+
+{% endfor %}
+
 </div>

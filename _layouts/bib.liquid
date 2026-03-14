@@ -61,7 +61,7 @@
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false %}
-            {% if forloop.length > 2 %}, {% elsif forloop.length == 2 %} {% endif %}
+            {% if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
           {% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
@@ -103,7 +103,9 @@
     {% endif %}
     {% if entry.award %}
       <p class="publication-entry__meta-note">
-        <strong>{% if entry.award_name %}{{ entry.award_name }}{% else %}Award{% endif %}:</strong>
+        <strong>
+          {%- if entry.award_name %}{{ entry.award_name }}{% else %}Award{% endif %}:</strong
+        >
         {{ entry.award | markdownify | remove: '<p>' | remove: '</p>' }}
       </p>
     {% endif %}
