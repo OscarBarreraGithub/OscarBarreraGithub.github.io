@@ -2,6 +2,18 @@
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
 
+"ApJL":
+  url: https://iopscience.iop.org/journal/2041-8205
+  color: "#1a8fcf"
+
+"APP":
+  url: https://www.sciencedirect.com/journal/astroparticle-physics
+  color: "#0e7390"
+
+"npjCM":
+  url: https://www.nature.com/npjcompumats/
+  color: "#1f9b67"
+
 "PhysRev":
   url: https://journals.aps.org/
 

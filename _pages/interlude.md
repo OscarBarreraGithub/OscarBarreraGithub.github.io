@@ -2,7 +2,7 @@
 layout: page
 permalink: /interlude/
 title: interlude
-description: Proof I've left the house
+description: proof I've left the house
 nav: true
 nav_order: 3
 ---
