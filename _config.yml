@@ -7,7 +7,7 @@ first_name: Oscar
 middle_name:
 last_name: Barrera
 contact_note: >
-  Background image credit: LIGO. Built with Jekyll & al-folio. Hosted on GitHub Pages.
+  Background image credit: LIGO.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Theoretical Physics + AI
 footer_text: ""

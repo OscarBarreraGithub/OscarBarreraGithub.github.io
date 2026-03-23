@@ -8,159 +8,191 @@ nav_order: 3
 ---
 
 <style>
-  .interlude-ledger {
-    display: grid;
-    gap: 1.5rem;
-  }
-
-  .year-card {
+  .interlude-shell {
     position: relative;
-    overflow: hidden;
-    padding: 1.5rem 1.75rem;
-    border: 1px solid var(--global-divider-color);
-    border-radius: 24px;
-    background:
-      radial-gradient(circle at top left, rgba(0, 212, 255, 0.12), transparent 32%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0.01) 100%),
-      var(--global-card-bg-color);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
   }
 
-  .year-card::before {
-    content: "";
+  .interlude-log {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .interlude-lead {
+    padding-right: min(410px, 44vw);
+  }
+
+  .interlude-photo {
     position: absolute;
-    inset: 0 0 auto 0;
-    height: 1px;
-    background: linear-gradient(90deg, var(--global-theme-color), transparent 70%);
+    top: -7.85rem;
+    right: 0;
+    width: min(368px, 40vw);
+    aspect-ratio: 16 / 9;
+    margin: 0;
+    padding: 0.45rem;
+    overflow: hidden;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 22px;
+    background: var(--global-card-bg-color);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
   }
 
-  .year-header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  .interlude-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
   }
 
-  .year-kicker {
-    margin: 0 0 0.25rem 0;
+  .interlude-entry {
+    padding: 1rem 0 1.15rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .interlude-entry-lead {
+    padding-top: 2.4rem;
+    border-top: 0;
+  }
+
+  .interlude-date {
+    display: block;
+    margin-bottom: 0.35rem;
     color: var(--global-text-color-light);
     font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-  }
-
-  .year-header h2 {
-    margin: 0;
-    font-size: clamp(2.4rem, 5vw, 3.5rem);
-    line-height: 0.95;
-    letter-spacing: -0.05em;
-  }
-
-  .year-count {
-    margin: 0;
-    color: var(--global-text-color-light);
-    font-size: 0.88rem;
-    white-space: nowrap;
-  }
-
-  .month-list {
-    display: grid;
-    gap: 0.9rem;
-  }
-
-  .month-block {
-    display: grid;
-    grid-template-columns: 140px 1fr;
-    gap: 1rem;
-    align-items: start;
-    padding: 0.35rem 0;
-  }
-
-  .month-name {
-    margin: 0;
-    padding-top: 0.45rem;
-    color: var(--global-theme-color);
-    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
   }
 
-  .show-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.65rem;
+  .interlude-shows {
+    margin: 0;
+    font-size: clamp(1.28rem, 2.8vw, 1.6rem);
+    line-height: 1.45;
   }
 
-  .show-pill {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.5rem;
-    padding: 0.55rem 0.95rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.035);
-    color: var(--global-text-color);
-    font-weight: 600;
-    line-height: 1.2;
+  .interlude-group-title {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.45rem, 3.4vw, 1.95rem);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  .interlude-group-list {
+    margin: 0;
+    padding: 0 12%;
+    list-style: none;
+    display: grid;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(2, minmax(13rem, max-content));
+    column-gap: clamp(11.7rem, 23.4vw, 18rem);
+    justify-content: center;
+    row-gap: 0.32rem;
+    font-size: clamp(1.12rem, 2.4vw, 1.32rem);
+    line-height: 1.55;
+  }
+
+  .interlude-entry-grouped .interlude-date {
+    margin-bottom: 0.5rem;
+  }
+
+  .interlude-entry-grouped .interlude-group-title {
+    text-align: center;
+  }
+
+  .interlude-entry-grouped .interlude-group-list {
+    text-align: left;
+  }
+
+  .interlude-group-list li {
+    white-space: nowrap;
+  }
+
+  .interlude-group-list li:nth-child(even) {
+    justify-self: end;
+    text-align: right;
   }
 
   @media (max-width: 720px) {
-    .year-card {
-      padding: 1.25rem;
-      border-radius: 20px;
+    .interlude-lead {
+      padding-right: 0;
     }
 
-    .year-header {
-      align-items: start;
-      flex-direction: column;
+    .interlude-photo {
+      position: static;
+      width: min(100%, 340px);
+      margin: 0 auto 1.25rem;
     }
 
-    .month-block {
+    .interlude-entry {
+      padding: 0.9rem 0 1rem;
+    }
+
+    .interlude-shows {
+      font-size: 1.18rem;
+    }
+
+    .interlude-group-list {
       grid-template-columns: 1fr;
-      gap: 0.55rem;
-    }
-
-    .month-name {
-      padding-top: 0;
+      padding: 0;
+      column-gap: 0;
     }
   }
 </style>
 
-<div class="interlude-ledger">
-  {% for year in site.data.interlude.years %}
-    {% assign total_shows = 0 %}
-    {% for month in year.months %}
-      {% assign total_shows = total_shows | plus: month.shows.size %}
-    {% endfor %}
+{% assign first_year = site.data.interlude.years | first %}
+{% assign first_month = first_year.months | first %}
 
-    <section class="year-card">
-      <div class="year-header">
-        <div>
-          <p class="year-kicker">Concert Log</p>
-          <h2>{{ year.year }}</h2>
-        </div>
-        <p class="year-count">{{ total_shows }} show{% if total_shows > 1 %}s{% endif %}</p>
-      </div>
+<div class="interlude-shell">
+  <figure class="interlude-photo">
+    <img
+      src="{{ '/assets/img/interlude-rockville-crowd.jpg' | relative_url }}"
+      alt="Crowd at Rockville Music Festival"
+      loading="eager"
+      decoding="async"
+    >
+  </figure>
 
-      <div class="month-list">
-        {% for month in year.months %}
-          <div class="month-block">
-            <p class="month-name">{{ month.name }}</p>
-            <div class="show-cloud">
-              {% for show in month.shows %}
-                <span class="show-pill">{{ show }}</span>
-              {% endfor %}
-            </div>
-          </div>
+  <div class="interlude-lead">
+    <div class="interlude-entry interlude-entry-lead">
+      <span class="interlude-date">{{ first_month.name }} {{ first_year.year }}</span>
+      <p class="interlude-shows">
+        {% for show in first_month.shows %}
+          {{ show }}{% unless forloop.last %}, {% endunless %}
         {% endfor %}
-      </div>
-    </section>
+      </p>
+    </div>
+  </div>
 
-{% endfor %}
-
+  <ul class="interlude-log" aria-label="Bands seen live">
+    {% for year in site.data.interlude.years %}
+      {% for month in year.months %}
+        {% unless forloop.parentloop.first and forloop.first %}
+          <li class="interlude-entry{% if month.section_title %} interlude-entry-grouped{% endif %}">
+            <span class="interlude-date">{{ month.name }} {{ year.year }}</span>
+            {% if month.section_title %}
+              <p class="interlude-group-title">{{ month.section_title }}</p>
+              <ol class="interlude-group-list">
+                {% for show in month.shows %}
+                  <li>{{ show }}</li>
+                {% endfor %}
+              </ol>
+            {% else %}
+              <p class="interlude-shows">
+                {% for show in month.shows %}
+                  {{ show }}{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+          </li>
+        {% endunless %}
+      {% endfor %}
+    {% endfor %}
+  </ul>
 </div>
